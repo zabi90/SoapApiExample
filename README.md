@@ -2,7 +2,7 @@
 
 ### Introduction
 The purpose of this sample is to consume SOAP base api using retrofit with xml converter that parse your xml body into plain object.
-I used two different XML converters in this example TikXML and Simple XML Converter. Simple XML Converter is deprecated but it sill work that's why i added both in this example.
+I used two different XML converters in this example TikXML and Simple XML Converter. Simple XML Converter is deprecated but it sill works that's why i added both in this example.
 
 ### Libraries
 
