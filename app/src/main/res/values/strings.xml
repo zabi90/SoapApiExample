@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SoapApiExample</string>
+    <string name="info_text">This is example project that consume SOAP base api from</string>
+    <string name="retrofit_with_tikxml_factory">Retrofit with tikxml Factory</string>
+    <string name="retrofit_with_simplexml_factory">Retrofit with SimpleXml Factory</string>
+    <string name="link">http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</string>
+</resources>
