@@ -7,10 +7,10 @@ I used two different XML converters in this example TikXML and Simple XML Conver
 ### Libraries
 
 #### Retrofit
-[Retrofit]("https://square.github.io/retrofit/") Retrofit turns your HTTP API into a Java interface.
+[Retrofit](https://square.github.io/retrofit/) Retrofit turns your HTTP API into a Java interface.
 
 #### TikXML
-[TikXML]("https://github.com/Tickaroo/tikxml") A fast xml parser for android (and java)
+[TikXML](https://github.com/Tickaroo/tikxml) A fast xml parser for android (and java)
 
 #### Simple XML Converter
-[Simple XML Converter]("https://github.com/square/retrofit/tree/master/retrofit-converters/simplexml") A Converter which uses Simple for XML serialization.
+[Simple XML Converter](https://github.com/square/retrofit/tree/master/retrofit-converters/simplexml) A Converter which uses Simple for XML serialization.
