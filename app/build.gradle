@@ -44,4 +44,7 @@ dependencies {
     kapt 'com.tickaroo.tikxml:processor:0.8.13'
     implementation 'com.tickaroo.tikxml:retrofit-converter:0.8.13'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    // simple xml
+    implementation 'com.squareup.retrofit2:converter-simplexml:2.6.2'
 }

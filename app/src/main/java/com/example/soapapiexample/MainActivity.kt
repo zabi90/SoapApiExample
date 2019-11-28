@@ -4,19 +4,12 @@ import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.example.soapapiexample.activities.simplexml.CountryListSimpleXmlActivity
 import com.example.soapapiexample.activities.tikxml.CountryListActivity
 import com.example.soapapiexample.extension.open
 import com.example.soapapiexample.extension.toast
-import com.example.soapapiexample.models.tikxml.Envelope
-import com.example.soapapiexample.models.tikxml.ListOfCountryNamesByName
-import com.example.soapapiexample.models.tikxml.RequestBody
-import com.example.soapapiexample.services.tikxml.WeatherService
 import kotlinx.android.synthetic.main.activity_main.*
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         optionTwo.setOnClickListener {
-
+            open(CountryListSimpleXmlActivity::class.java)
         }
 
         linkTextView.setOnClickListener {

@@ -1,4 +1,4 @@
-package com.example.soapapiexample.activities.tikxml
+package com.example.soapapiexample.activities.simplexml
 
 import android.os.Bundle
 import android.util.Log
@@ -7,26 +7,24 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.soapapiexample.R
 import com.example.soapapiexample.RetrofitAdapter
-import com.example.soapapiexample.adapters.tikxml.CountryListAdapter
+import com.example.soapapiexample.adapters.simplexml.CountryListAdapter
 import com.example.soapapiexample.extension.toast
-import com.example.soapapiexample.models.tikxml.Envelope
-import com.example.soapapiexample.models.tikxml.ListOfCountryNamesByName
-import com.example.soapapiexample.models.tikxml.RequestBody
-import com.example.soapapiexample.models.tikxml.response.ResponseEnvelope
-import com.example.soapapiexample.services.tikxml.WeatherService
-import kotlinx.android.synthetic.main.activity_country_list.*
+import com.example.soapapiexample.models.simplexml.Envelope
+import com.example.soapapiexample.models.simplexml.ListOfCountryNamesByName
+import com.example.soapapiexample.models.simplexml.RequestBody
+import com.example.soapapiexample.models.simplexml.response.ResponseEnvelope
+import com.example.soapapiexample.services.simplexml.WeatherService
+import kotlinx.android.synthetic.main.activity_country_list_simple_xml.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-
-class CountryListActivity : AppCompatActivity() {
+class CountryListSimpleXmlActivity : AppCompatActivity() {
 
     private val adapter = CountryListAdapter(this)
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_country_list)
+        setContentView(R.layout.activity_country_list_simple_xml)
         setupAdapter()
         setUpRetrofit()
     }
@@ -39,7 +37,7 @@ class CountryListActivity : AppCompatActivity() {
 
     private fun setUpRetrofit() {
 
-        val retrofit = RetrofitAdapter.setupRetrofitWithTikXml()
+        val retrofit = RetrofitAdapter.setupRetrofitWithSimpleXml()
 
         val service: WeatherService = retrofit.create(WeatherService::class.java)
 
@@ -72,5 +70,4 @@ class CountryListActivity : AppCompatActivity() {
             }
         })
     }
-
 }
